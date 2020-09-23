@@ -29,7 +29,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <img class="logo" width="40px" src="logo512.png"/>
+      <img alt="logo" class="logo" width="40px" src="logo512.png"/>
       <h1>Elite Trip Board</h1>
       <p>Headed somehwere?</p>
       <FilterableTable
