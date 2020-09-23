@@ -5,6 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #000;
   color: #f07b05;
+  font-weight: bold;
 }
 .table{
   color: #f07b05;
@@ -17,18 +18,24 @@ body {
 }
 
 .card {
-  background-color: #000;
+  border-radius: 0;
+  background-color: #f07b05;
   border-color:  #f07b05;
-  color: #f07b05;
+  color: #fff;
 }
 
+.table thead {
+  background: #f07b05;
+  color: #fff;
+}
 .table thead th, .table tr, .table td {
   border-color:  #f07b05;
 }
 
 .btn-warning {
-  background-color: #f07b05;
-  color: white;
+  border-color: #000;
+  background-color: #000;
+  color: #f07b05;
 }
 
 .form-control:focus {
@@ -51,7 +58,7 @@ code {
   margin-top: 6px;
 }
 .filterable-table-container .header-row .exact-filters {
-  margin-top: 20px;
+  margin: 20px;
 }
 .filterable-table-container .header-row .record-count {
   padding-top: 7px;
@@ -62,7 +69,7 @@ code {
 }
 .filterable-table-container table.filterable-table thead tr th span.fa {
   padding-left: 8px;
-  color: #aaa;
+  color: #000;
 }
 .filterable-table-container table.filterable-table tfoot tr td {
   font-weight: 700;

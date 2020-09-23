@@ -11,7 +11,9 @@ function App() {
     { type: "text", required: true, name: 'fcname', displayName: "Carrier Name", inputFilterable: true, exactFilterable: true, sortable: true },
     { type: "text", required: true, name: 'route', displayName: "Route", inputFilterable: true, exactFilterable: true, sortable: true },
     { type: "date", required: true, name: 'depDate', displayName: "Departure Date", inputFilterable: true, exactFilterable: true, sortable: true },
-    { type: "date", required: true, name: 'destDate', displayName: "Arrival Date", inputFilterable: true, exactFilterable: true, sortable: true },
+    { type: "time", required: true, name: 'depTime', displayName: "Time (UTC)", inputFilterable: true, sortable: true },
+    { type: "date", required: true, name: 'destDate', displayName: "Arrival Date", inputFilterable: true, sortable: true },
+    { type: "time", required: true, name: 'desTime', displayName: "Time (UTC)", inputFilterable: true, exactFilterable: true, sortable: true },
     { type: "text", name: 'notes', displayName: "Notes", inputFilterable: true }
   ];
   useEffect(() => {
@@ -27,7 +29,9 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <img class="logo" width="40px" src="logo512.png"/>
       <h1>Elite Trip Board</h1>
+      <p>Headed somehwere?</p>
       <FilterableTable
         namespace="People"
         initialSort="name"
@@ -40,7 +44,7 @@ function App() {
         <Card>
           <Card.Header>
             <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
-              Log Your trip
+              Log Your trip <span class="fa fa-angle-down"></span>
         </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="1">
